@@ -3,6 +3,9 @@ version: '3.1'
 services:
   cicd:
     build: .
+    ports:
+      - '4000:4000'
     volumes:
       - .:/home/app/cicd
       - /home/app/cicd/node_modules
+    command: ["node", "app.js"]
