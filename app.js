@@ -6,7 +6,7 @@ const HOST = "0.0.0.0";
 const PORT = 4000;
 
 app.get("/", function (request, response) {
-    response.send("Hello world!");
+    response.send("Hello world! Jenkins");
 });
 
 app.listen(PORT, HOST);
